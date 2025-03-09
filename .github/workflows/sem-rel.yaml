@@ -1,0 +1,41 @@
+---
+name: Semantic Release
+
+on:
+  push:
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+      - name: Install Semantic Release
+        run: npm i -D semantic-release
+      - name: Install Conventional Commits preset
+        run: npm i -D conventional-changelog-conventionalcommits
+      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+        run: npm audit signatures
+      - name: Determine if this is a dry run
+        run: |
+          if [ "${{ github.ref }}" -ne "refs/heads/main" ]; then
+            echo "DRY_RUN=--dry-run" >> $GITHUB_ENV
+          else
+            echo "DRY_RUN=" >> $GITHUB_ENV
+          fi
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release ${{ env.DRY_RUN }}
