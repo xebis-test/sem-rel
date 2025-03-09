@@ -30,7 +30,7 @@ jobs:
         run: npm audit signatures
       - name: Determine if this is a dry run
         run: |
-          if [ "${{ github.ref }}" -ne "refs/heads/main" ]; then
+          if [ "${{ github.ref }}" != "refs/heads/main" ]; then
             echo "DRY_RUN=--dry-run" >> $GITHUB_ENV
           else
             echo "DRY_RUN=" >> $GITHUB_ENV
