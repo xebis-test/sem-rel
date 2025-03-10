@@ -10,3 +10,6 @@ plugins:
     - preset: conventionalcommits
   - "@semantic-release/github"
   - "@semantic-release/changelog"
+  - - "@semantic-release/git"
+    - assets:
+      - CHANGELOG.md
