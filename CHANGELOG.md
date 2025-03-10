@@ -1,3 +1,11 @@
+# Changelog
+
+## [0.4.0](https://github.com/xebis-test/sem-rel/compare/v0.3.0...v0.4.0) (2025-03-10)
+
+### Features
+
+* changelog header ([186abcf](https://github.com/xebis-test/sem-rel/commit/186abcf85494e423ea60d284ee7535294639fa38))
+
 ## [0.3.0](https://github.com/xebis-test/sem-rel/compare/v0.2.0...v0.3.0) (2025-03-10)
 
 ### Features
