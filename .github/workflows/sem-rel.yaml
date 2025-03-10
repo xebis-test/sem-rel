@@ -28,6 +28,8 @@ jobs:
         run: npm i -D conventional-changelog-conventionalcommits
       - name: Install Changelog plugin
         run: npm i -D @semantic-release/changelog
+      - name: Install git plugin
+        run: npm i -D @semantic-release/git
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         run: npm audit signatures
       - name: Determine if this is a dry run
