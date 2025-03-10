@@ -9,7 +9,8 @@ plugins:
   - - "@semantic-release/release-notes-generator"
     - preset: conventionalcommits
   - "@semantic-release/github"
-  - "@semantic-release/changelog"
+  - - "@semantic-release/changelog"
+    - changelogTitle: '# Changelog'
   - - "@semantic-release/git"
     - assets:
       - CHANGELOG.md
