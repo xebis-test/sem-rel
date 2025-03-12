@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/xebis-test/sem-rel/compare/v0.4.0...v0.5.0) (2025-03-12)
+
+### Features
+
+* workflow npm install with --no-save ([15e42ca](https://github.com/xebis-test/sem-rel/commit/15e42ca3940c7c62bd513269ad0cc38919aae4c6))
+* workflow npm install with --save-optional ([3774b16](https://github.com/xebis-test/sem-rel/commit/3774b167c7572be7b4b390b31cda553599e0d186))
+
 ## [0.4.0](https://github.com/xebis-test/sem-rel/compare/v0.3.0...v0.4.0) (2025-03-10)
 
 ### Features
