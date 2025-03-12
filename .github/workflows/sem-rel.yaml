@@ -23,13 +23,13 @@ jobs:
         with:
           node-version: "lts/*"
       - name: Install Semantic Release
-        run: npm i -D semantic-release
+        run: npm i --no-save semantic-release
       - name: Install Conventional Commits preset
-        run: npm i -D conventional-changelog-conventionalcommits
+        run: npm i --no-save conventional-changelog-conventionalcommits
       - name: Install Changelog plugin
-        run: npm i -D @semantic-release/changelog
+        run: npm i --no-save @semantic-release/changelog
       - name: Install git plugin
-        run: npm i -D @semantic-release/git
+        run: npm i --no-save @semantic-release/git
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         run: npm audit signatures
       - name: Determine if this is a dry run
