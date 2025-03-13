@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.6.0](https://github.com/xebis-test/sem-rel/compare/v0.5.0...v0.6.0) (2025-03-13)
+
+### Features
+
+* test reusable shared workflow ([ab7cd0e](https://github.com/xebis-test/sem-rel/commit/ab7cd0e6f162672788a11c3d8f1f6647c1a3b209))
+
+### Bug Fixes
+
+* another ci ref fail ([ef0ca6e](https://github.com/xebis-test/sem-rel/commit/ef0ca6ea3a8044d83bf0a7863973d44f80215f73))
+* ci ref ([54fc08e](https://github.com/xebis-test/sem-rel/commit/54fc08e21912fce8297fc7c4f874c012d4d1cdb3))
+* sem rel failing on wrong reference ([2e5b72a](https://github.com/xebis-test/sem-rel/commit/2e5b72a40495d0807debbf2b04897bf0e9db489a))
+* wrong github token reference ([5141fdb](https://github.com/xebis-test/sem-rel/commit/5141fdb9464be422d458b0e2d5d579141304a37e))
+
 ## [0.5.0](https://github.com/xebis-test/sem-rel/compare/v0.4.0...v0.5.0) (2025-03-12)
 
 ### Features
