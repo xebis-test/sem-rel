@@ -7,6 +7,6 @@ on:
 
 jobs:
   call-reusable-release:
-    uses: xebis/github-actions-and-workflows/.github/workflows/semantic-release.yml@feature/semantic-release-reusable
+    uses: xebis/github-actions-and-workflows/.github/workflows/semantic-release.yml@test-0
     secrets:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
