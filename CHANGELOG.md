@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.7.0](https://github.com/xebis-test/sem-rel/compare/v0.6.0...v0.7.0) (2025-03-14)
+
+### Features
+
+* semantic releaser reusable workflow main branch ([09a30dc](https://github.com/xebis-test/sem-rel/commit/09a30dc3a905beedec19150f44ffa72d880b2e4b))
+
 ## [0.6.0](https://github.com/xebis-test/sem-rel/compare/v0.5.0...v0.6.0) (2025-03-13)
 
 ### Features
